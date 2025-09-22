@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<tv date="20250922102947 +0800">
+<tv date="20250922120535 +0800">
 	<channel id="CCTV-1">
 		<display-name lang="zh">CCTV-1</display-name>
 	</channel>
@@ -2703,89 +2703,95 @@
 	<channel id="湖南卫视">
 		<display-name lang="zh">湖南卫视</display-name>
 	</channel>
-	<programme channel="湖南卫视" start="20250922000600 +0800" stop="20250922005000 +0800">
-		<title lang="zh">我是大美人</title>
+	<programme channel="湖南卫视" start="20250922000800 +0800" stop="20250922013600 +0800">
+		<title lang="zh">你好星期六</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922005000 +0800" stop="20250922012000 +0800">
-		<title lang="zh">新闻当事人</title>
+	<programme channel="湖南卫视" start="20250922013600 +0800" stop="20250922020500 +0800">
+		<title lang="zh">首发</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922012000 +0800" stop="20250922020900 +0800">
-		<title lang="zh">我的纪录片</title>
-	</programme>
-	<programme channel="湖南卫视" start="20250922020900 +0800" stop="20250922023400 +0800">
+	<programme channel="湖南卫视" start="20250922020500 +0800" stop="20250922023500 +0800">
 		<title lang="zh">新闻大求真</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922023400 +0800" stop="20250922030700 +0800">
-		<title lang="zh">平民英雄</title>
-	</programme>
-	<programme channel="湖南卫视" start="20250922030700 +0800" stop="20250922033600 +0800">
+	<programme channel="湖南卫视" start="20250922023500 +0800" stop="20250922030400 +0800">
 		<title lang="zh">新闻大求真</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922033600 +0800" stop="20250922045900 +0800">
+	<programme channel="湖南卫视" start="20250922030400 +0800" stop="20250922033300 +0800">
+		<title lang="zh">傲椒的湘菜2(1):夏日湘风</title>
+	</programme>
+	<programme channel="湖南卫视" start="20250922033300 +0800" stop="20250922040200 +0800">
 		<title lang="zh">新闻大求真</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922045900 +0800" stop="20250922050400 +0800">
-		<title lang="zh">新闻当事人</title>
-	</programme>
-	<programme channel="湖南卫视" start="20250922050400 +0800" stop="20250922053000 +0800">
-		<title lang="zh">我的纪录片</title>
-	</programme>
-	<programme channel="湖南卫视" start="20250922053000 +0800" stop="20250922055700 +0800">
+	<programme channel="湖南卫视" start="20250922040200 +0800" stop="20250922043100 +0800">
 		<title lang="zh">新闻大求真</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922055700 +0800" stop="20250922070000 +0800">
-		<title lang="zh">我的纪录片</title>
+	<programme channel="湖南卫视" start="20250922043100 +0800" stop="20250922050100 +0800">
+		<title lang="zh">新闻大求真</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922070000 +0800" stop="20250922070100 +0800">
-		<title lang="zh">中华人民共和国国歌</title>
+	<programme channel="湖南卫视" start="20250922050100 +0800" stop="20250922053100 +0800">
+		<title lang="zh">新闻大求真</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922070100 +0800" stop="20250922073300 +0800">
+	<programme channel="湖南卫视" start="20250922053100 +0800" stop="20250922055900 +0800">
+		<title lang="zh">平民英雄:耕新者质向未来</title>
+	</programme>
+	<programme channel="湖南卫视" start="20250922055900 +0800" stop="20250922062800 +0800">
+		<title lang="zh">首发</title>
+	</programme>
+	<programme channel="湖南卫视" start="20250922062800 +0800" stop="20250922070100 +0800">
+		<title lang="zh">傲椒的湘菜2(11):滋味一种</title>
+	</programme>
+	<programme channel="湖南卫视" start="20250922070100 +0800" stop="20250922073400 +0800">
 		<title lang="zh">湖南新闻联播</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922073300 +0800" stop="20250922081100 +0800">
+	<programme channel="湖南卫视" start="20250922073400 +0800" stop="20250922080200 +0800">
+		<title lang="zh">爱情珠宝</title>
+	</programme>
+	<programme channel="湖南卫视" start="20250922080200 +0800" stop="20250922081500 +0800">
+		<title lang="zh">萌宝战警之幻世虫界(1):未知星球</title>
+	</programme>
+	<programme channel="湖南卫视" start="20250922081500 +0800" stop="20250922082900 +0800">
+		<title lang="zh">萌宝战警之幻世虫界(2):强强联手</title>
+	</programme>
+	<programme channel="湖南卫视" start="20250922082900 +0800" stop="20250922084300 +0800">
+		<title lang="zh">萌宝战警之幻世虫界(3):巧遇挚友</title>
+	</programme>
+	<programme channel="湖南卫视" start="20250922084300 +0800" stop="20250922093100 +0800">
 		<title lang="zh">偶像独播剧场:爱情珠宝</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922081100 +0800" stop="20250922084300 +0800">
-		<title lang="zh">动画片剧场</title>
-	</programme>
-	<programme channel="湖南卫视" start="20250922084300 +0800" stop="20250922093400 +0800">
+	<programme channel="湖南卫视" start="20250922093100 +0800" stop="20250922103000 +0800">
 		<title lang="zh">偶像独播剧场:爱情珠宝</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922093400 +0800" stop="20250922103600 +0800">
+	<programme channel="湖南卫视" start="20250922103000 +0800" stop="20250922111400 +0800">
 		<title lang="zh">偶像独播剧场:爱情珠宝</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922103600 +0800" stop="20250922112200 +0800">
+	<programme channel="湖南卫视" start="20250922111400 +0800" stop="20250922121000 +0800">
 		<title lang="zh">偶像独播剧场:爱情珠宝</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922112200 +0800" stop="20250922121000 +0800">
-		<title lang="zh">偶像独播剧场:爱情珠宝</title>
-	</programme>
-	<programme channel="湖南卫视" start="20250922121000 +0800" stop="20250922123200 +0800">
+	<programme channel="湖南卫视" start="20250922121000 +0800" stop="20250922123100 +0800">
 		<title lang="zh">午间新闻</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922123200 +0800" stop="20250922124100 +0800">
+	<programme channel="湖南卫视" start="20250922123100 +0800" stop="20250922123700 +0800">
 		<title lang="zh">卫视气象站</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922124100 +0800" stop="20250922135500 +0800">
+	<programme channel="湖南卫视" start="20250922123700 +0800" stop="20250922135700 +0800">
 		<title lang="zh">偶像独播剧场:爱情珠宝</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922135500 +0800" stop="20250922145200 +0800">
+	<programme channel="湖南卫视" start="20250922135700 +0800" stop="20250922145500 +0800">
 		<title lang="zh">偶像独播剧场:爱情珠宝</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922145200 +0800" stop="20250922153000 +0800">
+	<programme channel="湖南卫视" start="20250922145500 +0800" stop="20250922153900 +0800">
 		<title lang="zh">偶像独播剧场:爱情珠宝</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922153000 +0800" stop="20250922161900 +0800">
+	<programme channel="湖南卫视" start="20250922153900 +0800" stop="20250922162700 +0800">
 		<title lang="zh">青春独播剧场:薄冰</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922161900 +0800" stop="20250922171000 +0800">
+	<programme channel="湖南卫视" start="20250922162700 +0800" stop="20250922171000 +0800">
 		<title lang="zh">青春独播剧场:薄冰</title>
 	</programme>
 	<programme channel="湖南卫视" start="20250922171000 +0800" stop="20250922175500 +0800">
 		<title lang="zh">青春独播剧场:薄冰</title>
 	</programme>
 	<programme channel="湖南卫视" start="20250922175500 +0800" stop="20250922183000 +0800">
-		<title lang="zh">平民英雄</title>
+		<title lang="zh">首发</title>
 	</programme>
 	<programme channel="湖南卫视" start="20250922183000 +0800" stop="20250922185700 +0800">
 		<title lang="zh">湖南新闻联播</title>
@@ -2793,22 +2799,28 @@
 	<programme channel="湖南卫视" start="20250922185700 +0800" stop="20250922190000 +0800">
 		<title lang="zh">卫视气象站</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922190000 +0800" stop="20250922193200 +0800">
+	<programme channel="湖南卫视" start="20250922190000 +0800" stop="20250922193000 +0800">
 		<title lang="zh">转播中央台新闻联播</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922193200 +0800" stop="20250922200900 +0800">
-		<title lang="zh">沈从文与湘西</title>
+	<programme channel="湖南卫视" start="20250922193000 +0800" stop="20250922201000 +0800">
+		<title lang="zh">去湘当有味的地方3(7)</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922200900 +0800" stop="20250922211000 +0800">
+	<programme channel="湖南卫视" start="20250922201000 +0800" stop="20250922210500 +0800">
 		<title lang="zh">金鹰独播剧场:欢乐家长群2(5)</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922211000 +0800" stop="20250922220300 +0800">
+	<programme channel="湖南卫视" start="20250922210500 +0800" stop="20250922220000 +0800">
 		<title lang="zh">金鹰独播剧场:欢乐家长群2(6)</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922220300 +0800" stop="20250922230000 +0800">
-		<title lang="zh">芒果季风剧场:归路(19)</title>
+	<programme channel="湖南卫视" start="20250922220000 +0800" stop="20250922225500 +0800">
+		<title lang="zh">芒果季风剧场:归路(23)</title>
 	</programme>
-	<programme channel="湖南卫视" start="20250922230000 +0800" stop="20250922235900 +0800">
-		<title lang="zh">芒果季风剧场:归路(20)</title>
+	<programme channel="湖南卫视" start="20250922225500 +0800" stop="20250922235000 +0800">
+		<title lang="zh">芒果季风剧场:归路(24)</title>
+	</programme>
+	<programme channel="湖南卫视" start="20250922235000 +0800" stop="20250922235000 +0800">
+		<title lang="zh">山有九色念有卿(1)</title>
+	</programme>
+	<programme channel="湖南卫视" start="20250922235000 +0800" stop="20250922235900 +0800">
+		<title lang="zh">山有九色念有卿(1)</title>
 	</programme>
 </tv>
