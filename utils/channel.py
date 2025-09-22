@@ -27,6 +27,7 @@ from utils.tools import (
     format_name,
     get_name_url,
     check_url_by_keywords,
+    check_custom_filters,
     get_total_urls,
     add_url_info,
     resource_path,
@@ -563,6 +564,10 @@ def append_data_to_info_data(
             if not url:
                 continue
 
+            # custom filters (protocols/https/keywords/suffix/tld/headers)
+            if not check_custom_filters(url, headers):
+                continue
+
             if url_origin != "whitelist" and whitelist and check_url_by_keywords(url, whitelist):
                 url_origin = "whitelist"
 
@@ -820,9 +825,9 @@ def sort_channel_result(channel_data, result=None, filter_host=False, ipv6_suppo
             whitelist_result = []
             test_result = result.get(cate, {}).get(name, []) if result else []
             for value in values:
-                if value["origin"] in ["whitelist", "live", "hls"] or (
-                        not ipv6_support and result and value["ipv_type"] == "ipv6"
-                ):
+                if (value["origin"] in ["whitelist", "live", "hls"]) and not config.filter_only_accessible:
+                    whitelist_result.append(value)
+                elif not ipv6_support and result and value["ipv_type"] == "ipv6":
                     whitelist_result.append(value)
                 elif filter_host or not result:
                     test_result.append({**value, **get_speed_result(value["host"])} if filter_host else value)
