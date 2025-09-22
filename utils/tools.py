@@ -426,7 +426,7 @@ def remove_duplicates_from_list(data_list, seen, filter_host=False, ipv6_support
     """
     unique_list = []
     for item in data_list:
-        if item["origin"] in ["whitelist", "live", "hls"]:
+        if item["origin"] in ["whitelist", "live", "hls"] and not config.filter_only_accessible:
             continue
         if not ipv6_support and item["ipv_type"] == "ipv6":
             continue
@@ -710,6 +710,69 @@ def get_url_without_scheme(url: str) -> str:
     """
     parsed = urlparse(url)
     return parsed.netloc + parsed.path
+
+
+def _get_url_scheme_host_path_suffix(url: str):
+    parsed = urlparse(url)
+    scheme = (parsed.scheme or "").lower()
+    host = (parsed.hostname or parsed.netloc or "").lower()
+    path = parsed.path or ""
+    suffix = (os.path.splitext(path)[1] or "").lstrip(".").lower()
+    return scheme, host, path, suffix
+
+
+def check_custom_filters(url: str, headers: dict | None = None) -> bool:
+    """
+    Apply custom filters configured in Settings.* to a url/headers pair.
+
+    Returns True if the url passes all filters, otherwise False.
+    """
+    try:
+        scheme, host, path, suffix = _get_url_scheme_host_path_suffix(url)
+
+        # protocol allow list
+        protocols = config.filter_protocols
+        if protocols and scheme and scheme not in protocols:
+            return False
+
+        # https required
+        if config.filter_require_https and scheme and scheme != "https":
+            return False
+
+        # deny by URL keywords
+        deny_keywords = set(config.filter_url_keywords_deny)
+        if deny_keywords and any(k in url for k in deny_keywords):
+            return False
+
+        # allow keywords (if configured, must match at least one)
+        allow_keywords = set(config.filter_url_keywords_allow)
+        if allow_keywords and not any(k in url for k in allow_keywords):
+            return False
+
+        # block by suffix (e.g., ts, mp4) when matched
+        deny_suffix = set(config.filter_suffix_deny)
+        if deny_suffix and suffix and suffix in deny_suffix:
+            return False
+
+        # block by top-level domain
+        deny_tld = set(config.filter_tld_deny)
+        if deny_tld:
+            # extract tld by last dot part
+            tld = host.rsplit(".", 1)[-1] if "." in host else host
+            if tld in deny_tld:
+                return False
+
+        # required headers
+        required_headers = set(config.filter_required_headers)
+        if required_headers:
+            headers = headers or {}
+            normalized = {k.lower(): v for k, v in headers.items()}
+            if not all(k in normalized and normalized[k] for k in required_headers):
+                return False
+
+        return True
+    except Exception:
+        return True
 
 
 def find_by_id(data: dict, id: int) -> dict:
