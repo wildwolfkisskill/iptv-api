@@ -391,6 +391,44 @@ class ConfigManager:
     def update_interval(self):
         return self.config.getfloat("Settings", "update_interval", fallback=12)
 
+    @property
+    def filter_require_https(self):
+        return self.config.getboolean("Settings", "filter_require_https", fallback=False)
+
+    @property
+    def filter_protocols(self):
+        value = self.config.get("Settings", "filter_protocols", fallback="")
+        return [v.strip().lower() for v in value.split(",") if v.strip()]
+
+    @property
+    def filter_url_keywords_allow(self):
+        value = self.config.get("Settings", "filter_url_keywords_allow", fallback="")
+        return [v.strip() for v in value.split(",") if v.strip()]
+
+    @property
+    def filter_url_keywords_deny(self):
+        value = self.config.get("Settings", "filter_url_keywords_deny", fallback="")
+        return [v.strip() for v in value.split(",") if v.strip()]
+
+    @property
+    def filter_suffix_deny(self):
+        value = self.config.get("Settings", "filter_suffix_deny", fallback="")
+        return [v.strip().lower() for v in value.split(",") if v.strip()]
+
+    @property
+    def filter_tld_deny(self):
+        value = self.config.get("Settings", "filter_tld_deny", fallback="")
+        return [v.strip().lower() for v in value.split(",") if v.strip()]
+
+    @property
+    def filter_required_headers(self):
+        value = self.config.get("Settings", "filter_required_headers", fallback="")
+        return [v.strip().lower() for v in value.split(",") if v.strip()]
+
+    @property
+    def filter_only_accessible(self):
+        return self.config.getboolean("Settings", "filter_only_accessible", fallback=False)
+
     def load(self):
         """
         Load the config
